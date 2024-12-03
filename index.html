@@ -48,6 +48,12 @@
         ]
     }
     </script>
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chartist@0.11.4/dist/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chartist@0.11.4/dist/chartist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.5.28/dist/jspdf.plugin.autotable.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -77,7 +83,80 @@
     <div class="hero-section py-5 text-center text-white">
         <div class="container">
             <h1 class="display-4 mb-4">Premium Domain Portfolio</h1>
-            <p class="lead mb-4">Discover your perfect domain name from our curated collection</p>
+            <p class="lead mb-4">Discover exceptional domain names for your next project</p>
+            <div class="stats-dashboard mt-4">
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="stat-card primary">
+                            <i class="bi bi-globe2"></i>
+                            <h3 id="totalDomains">0</h3>
+                            <p>Total Domains</p>
+                            <div class="stat-trend" id="domainsTrend">
+                                <span class="trend-icon"></span>
+                                <span class="trend-value"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="stat-card success">
+                            <i class="bi bi-star-fill"></i>
+                            <h3 id="featuredDomains">0</h3>
+                            <p>Featured Domains</p>
+                            <div class="stat-chart" id="featuredChart"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="stat-card warning">
+                            <i class="bi bi-tags"></i>
+                            <h3 id="totalCategories">0</h3>
+                            <p>Categories</p>
+                            <div class="stat-chart" id="categoryChart"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="stat-card info">
+                            <i class="bi bi-currency-dollar"></i>
+                            <h3 id="avgPrice">$0</h3>
+                            <p>Avg. Price</p>
+                            <div class="stat-chart" id="priceChart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="stat-card dark">
+                            <h4>Price Distribution</h4>
+                            <div id="priceDistribution" style="height: 200px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="stat-card dark">
+                            <h4>Category Distribution</h4>
+                            <div id="categoryDistribution" style="height: 200px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input 
+                        type="text" 
+                        id="domainSearch" 
+                        class="form-control form-control-lg" 
+                        placeholder="Search domains by name, category, or keywords..."
+                        aria-label="Domain Search"
+                    >
+                    <button class="btn btn-primary" type="button" id="searchButton">
+                        <i class="bi bi-search"></i> Search
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -103,6 +182,7 @@
                         <option value="name-desc">Name (Z-A)</option>
                         <option value="price-asc">Price (Low-High)</option>
                         <option value="price-desc">Price (High-Low)</option>
+                        <option value="featured">Featured First</option>
                     </select>
                 </div>
                 <div class="col-md-2">
@@ -126,9 +206,98 @@
             </div>
         </div>
 
+        <div class="advanced-filters mb-3">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-funnel"></i></span>
+                        <select class="form-select" id="lengthFilter">
+                            <option value="">Domain Length</option>
+                            <option value="short">Short (≤6)</option>
+                            <option value="medium">Medium (7-12)</option>
+                            <option value="long">Long (>12)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-hash"></i></span>
+                        <select class="form-select" id="characterFilter">
+                            <option value="">Character Type</option>
+                            <option value="letters">Letters Only</option>
+                            <option value="numbers">With Numbers</option>
+                            <option value="special">With Special</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                        <select class="form-select" id="dateAddedFilter">
+                            <option value="">Date Added</option>
+                            <option value="today">Today</option>
+                            <option value="week">This Week</option>
+                            <option value="month">This Month</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-sort-alpha-down"></i></span>
+                        <select class="form-select" id="tldFilter">
+                            <option value="">TLD Filter</option>
+                            <option value="com">.com</option>
+                            <option value="net">.net</option>
+                            <option value="org">.org</option>
+                            <option value="io">.io</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-actions mb-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary" id="clearFilters">
+                            <i class="bi bi-x-circle"></i> Clear Filters
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" id="toggleView">
+                            <i class="bi bi-grid"></i> Toggle View
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="export-options mb-3">
+            <div class="btn-group">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-download"></i> Export
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" id="exportCSV">CSV Format</a></li>
+                    <li><a class="dropdown-item" href="#" id="exportJSON">JSON Format</a></li>
+                    <li><a class="dropdown-item" href="#" id="exportXML">XML Format</a></li>
+                    <li><a class="dropdown-item" href="#" id="exportPDF">PDF Format</a></li>
+                </ul>
+            </div>
+            <div class="btn-group ms-2">
+                <button class="btn btn-outline-primary" id="shareButton">
+                    <i class="bi bi-share"></i> Share
+                </button>
+            </div>
+        </div>
+
         <div class="row" id="domain-list">
             <!-- Domain cards will be dynamically inserted here -->
         </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+        <!-- Toasts will be dynamically added here -->
     </div>
 
     <!-- Offer Modal -->
