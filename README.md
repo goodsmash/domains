@@ -129,3 +129,48 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Google Analytics team
 - Afternic for domain sales integration
 - Icons from Bootstrap Icons
+
+## Domainer: Premium Domain Portfolio Platform
+
+## 🌐 Project Overview
+Domainer is an interactive, data-driven platform for exploring and managing premium domain names. Designed for domain investors, entrepreneurs, and tech enthusiasts.
+
+## 🚀 Key Features
+- Advanced Domain Filtering
+- Intelligent Recommendations
+- Comprehensive Export Options
+- Interactive Visualizations
+- Responsive Design
+
+## 🔗 Social Connections
+- **Twitter**: [@Web3IsWild](https://x.com/Web3IsWild)
+- **LinkedIn**: [Ryan J. McGinley](https://www.linkedin.com/in/ryanjmcginley/)
+
+## 💡 Technology Stack
+- Frontend: HTML5, CSS3, JavaScript (ES6+)
+- Framework: Bootstrap 5
+- Libraries: 
+  - Chartist.js (Visualizations)
+  - Fuse.js (Fuzzy Search)
+  - jsPDF (Export)
+
+## 📊 Project Statistics
+- Total Domains: 50+
+- Categories: Tech, Cannabis, Gaming, Real Estate, Business
+- Average Domain Value: $2,500
+
+## 🛠 Development Roadmap
+- [ ] User Authentication
+- [ ] Real-time Price Tracking
+- [ ] Advanced Machine Learning Recommendations
+- [ ] Marketplace Integration
+
+## 📧 Contact
+**Email**: cannafirm@gmail.com
+
+## 📄 License
+MIT License
+
+---
+
+*Curated with ❤️ by a Domain Enthusiast*

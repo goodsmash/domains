@@ -735,3 +735,40 @@ body {
     color: #6c757d;
     font-weight: 500;
 }
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: #ffffff;
+    padding: 3rem 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer .social-links a {
+    color: #ffffff;
+    margin-right: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    transform: scale(1.2);
+    color: #3498db;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
