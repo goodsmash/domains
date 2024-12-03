@@ -165,8 +165,33 @@ Domainer is an interactive, data-driven platform for exploring and managing prem
 - [ ] Advanced Machine Learning Recommendations
 - [ ] Marketplace Integration
 
+## 🌐 Supported Domains
+- domainer.net
+- www.domainer.net
+- domainpro.io
+- www.domainpro.io
+- web3domains.com
+- www.web3domains.com
+- adjusts.net
+- www.adjusts.net
+
+## 🚀 Deployment
+This site is hosted on GitHub Pages and configured for multiple domain aliases.
+
+### DNS Configuration
+- A Records: 
+  - 185.199.108.153
+  - 185.199.109.153
+  - 185.199.110.153
+  - 185.199.111.153
+- CNAME: goodsmash.github.io
+
 ## 📧 Contact
 **Email**: cannafirm@gmail.com
+**Twitter**: [@Web3IsWild](https://x.com/Web3IsWild)
+**LinkedIn**: [Ryan J. McGinley](https://www.linkedin.com/in/ryanjmcginley/)
+
+*Powered by GitHub Pages and Squarespace DNS*
 
 ## 📄 License
 MIT License
