@@ -3,20 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Domain Portfolio</title>
+    <meta name="description" content="Premium Domain Portfolio - High-quality domains for sale including cannabis, tech, and business domains">
+    <meta name="keywords" content="domain names, premium domains, domain portfolio, cannabis domains, tech domains, business domains">
+    <meta name="author" content="Premium Domains">
+    <meta property="og:title" content="Premium Domain Portfolio">
+    <meta property="og:description" content="Discover premium domain names for your next project. Cannabis, tech, business, and more domains available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goodsmash.github.io/domainer/">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/1378/1378598.png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXX');
+    </script>
+
+    <title>Premium Domain Portfolio - Cannabis, Tech, & Business Domains</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1378/1378598.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Premium Domains",
+        "url": "https://goodsmash.github.io/domainer/",
+        "logo": "https://cdn-icons-png.flaticon.com/512/1378/1378598.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "cannafirm@gmail.com",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://twitter.com/yourtwitterhandle",
+            "https://linkedin.com/company/yourcompany"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Premium Domains</a>
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-globe2"></i> Premium Domains
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -25,38 +74,64 @@
         </div>
     </nav>
 
+    <div class="hero-section py-5 text-center text-white">
+        <div class="container">
+            <h1 class="display-4 mb-4">Premium Domain Portfolio</h1>
+            <p class="lead mb-4">Discover your perfect domain name from our curated collection</p>
+        </div>
+    </div>
+
     <div class="container mt-5">
-        <h1 class="text-center mb-5">Premium Domain Portfolio</h1>
-        
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="searchInput" placeholder="Search domains...">
-                    <button class="btn btn-outline-secondary" type="button" id="searchButton">
-                        <i class="bi bi-search"></i>
-                    </button>
+        <div class="filters-section">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search domains...">
+                        <button class="btn btn-primary" type="button" id="searchButton">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="categoryFilter">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="sortOption">
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="price-asc">Price (Low-High)</option>
+                        <option value="price-desc">Price (High-Low)</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="featuredToggle">
+                        <label class="form-check-label" for="featuredToggle">Featured Only</label>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <select class="form-select" id="categoryFilter">
-                    <option value="">All Categories</option>
-                </select>
-            </div>
-            <div class="col-md-4">
-                <select class="form-select" id="sortOption">
-                    <option value="name-asc">Name (A-Z)</option>
-                    <option value="name-desc">Name (Z-A)</option>
-                    <option value="price-asc">Price (Low to High)</option>
-                    <option value="price-desc">Price (High to Low)</option>
-                </select>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text">Price Range</span>
+                        <input type="number" class="form-control" id="priceRangeMin" placeholder="Min">
+                        <input type="number" class="form-control" id="priceRangeMax" placeholder="Max">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p id="resultsCount" class="mb-0 text-end"></p>
+                </div>
             </div>
         </div>
 
         <div class="row" id="domain-list">
-            <!-- Domains will be populated via JavaScript -->
+            <!-- Domain cards will be dynamically inserted here -->
         </div>
     </div>
 
+    <!-- Offer Modal -->
     <div class="modal fade" id="offerModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -65,39 +140,41 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="offerForm">
-                        <div class="mb-3">
-                            <label for="offerAmount" class="form-label">Your Offer Amount ($)</label>
-                            <input type="number" class="form-control" id="offerAmount" required>
-                            <div class="form-text" id="minOfferText"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="offerEmail" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="offerEmail" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="offerMessage" class="form-label">Message (Optional)</label>
-                            <textarea class="form-control" id="offerMessage" rows="3"></textarea>
-                        </div>
-                    </form>
+                    <div class="mb-3">
+                        <label for="offerAmount" class="form-label">Your Offer Amount ($)</label>
+                        <input type="number" class="form-control" id="offerAmount" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="offerEmail" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="offerEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="offerMessage" class="form-label">Message (Optional)</label>
+                        <textarea class="form-control" id="offerMessage" rows="3"></textarea>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-primary" id="submitOffer">Submit Offer</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="footer mt-5 py-3 bg-light" id="contact">
+    <footer class="footer mt-5 py-4 bg-dark text-light" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <h5>Contact Us</h5>
+                    <h5><i class="bi bi-envelope"></i> Contact Us</h5>
                     <p>Interested in our premium domains? Get in touch!</p>
-                    <p><i class="bi bi-envelope"></i> Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+                    <p>Email: <a href="mailto:cannafirm@gmail.com">cannafirm@gmail.com</a></p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
                     <p class="mb-0"> 2023 Premium Domains. All rights reserved.</p>
                 </div>
             </div>

@@ -2,326 +2,326 @@ const domains = [
     {
         name: '01fast.com',
         price: 8628,
-        minOffer: 20,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'adjusts.net',
         price: 15000,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'adoptive.net',
         price: 12000,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'adopts.net',
         price: 75000,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: true
     },
     {
         name: 'amain.org',
         price: 6000,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'awaits.net',
         price: 2000,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'awakens.org',
         price: 7500,
-        minOffer: 2055,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'awakes.net',
         price: 17000,
-        minOffer: 9900,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'budgetairlines.org',
         price: 6500,
-        minOffer: 99,
-        category: 'travel'
+        category: 'travel',
+        featured: false
     },
     {
         name: 'bulkquartz.com',
         price: 9555,
-        minOffer: 900,
-        category: 'business'
+        category: 'business',
+        featured: false
     },
     {
         name: 'burglarizes.com',
         price: 7666,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'cannafirm.net',
         price: 55000,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'cannasnack.com',
         price: 55000,
-        minOffer: 9944,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'cannastocks.com',
         price: 150000,
-        minOffer: 9999,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'cannatubes.com',
         price: 12500,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: false
     },
     {
         name: 'catsru.com',
         price: 3800,
-        minOffer: 800,
-        category: 'pets'
+        category: 'pets',
+        featured: false
     },
     {
         name: 'cbcvoil.com',
         price: 50000,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'cbeoil.com',
         price: 50000,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'cbgvoil.com',
         price: 90000,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'coauthor.net',
         price: 1900,
-        minOffer: 99,
-        category: 'writing'
+        category: 'writing',
+        featured: false
     },
     {
         name: 'cola.mx',
         price: 150000,
-        minOffer: 9999,
-        category: 'beverages'
+        category: 'beverages',
+        featured: true
     },
     {
         name: 'countermen.com',
         price: 25000,
-        minOffer: 20,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'dislikes.org',
         price: 5000,
-        minOffer: 99,
-        category: 'social'
+        category: 'social',
+        featured: false
     },
     {
         name: 'fragfun.com',
         price: 7500,
-        minOffer: 99,
-        category: 'gaming'
+        category: 'gaming',
+        featured: false
     },
     {
         name: 'fund.com.mx',
         price: 34444,
-        minOffer: 99,
-        category: 'finance'
+        category: 'finance',
+        featured: true
     },
     {
         name: 'getmarijuana.org',
         price: 19000,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: false
     },
     {
         name: 'gpt-4.com.mx',
         price: 666,
-        minOffer: 99,
-        category: 'tech'
+        category: 'tech',
+        featured: true
     },
     {
         name: 'guiltily.com',
         price: 8890,
-        minOffer: 20,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'homeowneradvocategroup.com',
         price: 5000,
-        minOffer: 99,
-        category: 'real-estate'
+        category: 'real-estate',
+        featured: false
     },
     {
         name: 'je4.net',
         price: 50009,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'leapt.org',
         price: 2444,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'levies.net',
         price: 2400,
-        minOffer: 99,
-        category: 'finance'
+        category: 'finance',
+        featured: false
     },
     {
         name: 'lucked.net',
         price: 77777,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'maintenances.org',
         price: 7000,
-        minOffer: 99,
-        category: 'services'
+        category: 'services',
+        featured: false
     },
     {
         name: 'marihuanas.org',
         price: 90000,
-        minOffer: 9944,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'masmart.org',
         price: 5000,
-        minOffer: 2900,
-        category: 'business'
+        category: 'business',
+        featured: false
     },
     {
         name: 'mexicocitymarijuana.com',
         price: 9000,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'mexicomarihuana.org',
         price: 41200,
-        minOffer: 99,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'midsts.com',
         price: 67000,
-        minOffer: 20,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'noobfree.com',
         price: 1500,
-        minOffer: 99,
-        category: 'gaming'
+        category: 'gaming',
+        featured: false
     },
     {
         name: 'politica.net',
         price: 75000,
-        minOffer: 15000,
-        category: 'politics'
+        category: 'politics',
+        featured: true
     },
     {
         name: 'privacies.net',
         price: 15000,
-        minOffer: 99,
-        category: 'tech'
+        category: 'tech',
+        featured: false
     },
     {
         name: 'proleggings.com',
         price: 7600,
-        minOffer: 99,
-        category: 'fashion'
+        category: 'fashion',
+        featured: false
     },
     {
         name: 'servergamer.com',
         price: 12000,
-        minOffer: 5000,
-        category: 'gaming'
+        category: 'gaming',
+        featured: true
     },
     {
         name: 'smartsolar.us',
         price: 90000,
-        minOffer: 994,
-        category: 'energy'
+        category: 'energy',
+        featured: true
     },
     {
         name: 'survives.net',
         price: 46000,
-        minOffer: 99,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'tankcontainer.org',
         price: 5500,
-        minOffer: 99,
-        category: 'industrial'
+        category: 'industrial',
+        featured: false
     },
     {
         name: 'thclocate.com',
         price: 55000,
-        minOffer: 12000,
-        category: 'cannabis'
+        category: 'cannabis',
+        featured: true
     },
     {
         name: 'vocabularies.org',
         price: 8900,
-        minOffer: 20,
-        category: 'education'
+        category: 'education',
+        featured: false
     },
     {
         name: 'welobbyit.com',
         price: 30000,
-        minOffer: 99,
-        category: 'business'
+        category: 'business',
+        featured: true
     },
     {
         name: 'wickedgay.com',
         price: 7500,
-        minOffer: 2900,
-        category: 'lgbt'
+        category: 'lgbt',
+        featured: false
     },
     {
         name: 'wined.net',
         price: 15000,
-        minOffer: 99,
-        category: 'beverages'
+        category: 'beverages',
+        featured: false
     },
     {
         name: 'wintry.net',
         price: 18000,
-        minOffer: 20,
-        category: 'general'
+        category: 'general',
+        featured: false
     },
     {
         name: 'xn--poltica-9ya.net',
         price: 65000,
-        minOffer: 99,
-        category: 'politics'
+        category: 'politics',
+        featured: true
     }
 ];
 
