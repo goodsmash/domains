@@ -1,0 +1,304 @@
+{
+    "domains": [
+        {
+            "name": "adjusts.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 12, 2025"
+        },
+        {
+            "name": "adoptive.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Dec 14, 2025"
+        },
+        {
+            "name": "adopts.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 25, 2025"
+        },
+        {
+            "name": "amain.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Aug 16, 2025"
+        },
+        {
+            "name": "awaits.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 3, 2025"
+        },
+        {
+            "name": "awakes.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 2, 2025"
+        },
+        {
+            "name": "budgetairlines.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jul 5, 2025"
+        },
+        {
+            "name": "bulkquartz.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 2, 2025"
+        },
+        {
+            "name": "burglarizes.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 2, 2025"
+        },
+        {
+            "name": "cannafirm.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Dec 26, 2024"
+        },
+        {
+            "name": "cannasnack.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Dec 27, 2024"
+        },
+        {
+            "name": "cannastocks.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 4, 2025"
+        },
+        {
+            "name": "cannatubes.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jun 30, 2025"
+        },
+        {
+            "name": "catsru.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 3, 2025"
+        },
+        {
+            "name": "cbcvoil.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jan 15, 2025"
+        },
+        {
+            "name": "cbeoil.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jan 15, 2025"
+        },
+        {
+            "name": "cbgvoil.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jan 15, 2025"
+        },
+        {
+            "name": "coauthor.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Dec 18, 2024"
+        },
+        {
+            "name": "cola.mx",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jan 19, 2025"
+        },
+        {
+            "name": "dislikes.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 25, 2025"
+        },
+        {
+            "name": "fragfun.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 11, 2025"
+        },
+        {
+            "name": "fund.com.mx",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jan 29, 2025"
+        },
+        {
+            "name": "getmarijuana.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 9, 2025"
+        },
+        {
+            "name": "gpt-4.com.mx",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 30, 2025"
+        },
+        {
+            "name": "homeowneradvocategroup.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Apr 2, 2025"
+        },
+        {
+            "name": "je4.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 9, 2025"
+        },
+        {
+            "name": "jobsinmass.com",
+            "status": "Not connected",
+            "platform": "Third-party",
+            "expiry": "Feb 2, 2025"
+        },
+        {
+            "name": "leapt.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Aug 30, 2025"
+        },
+        {
+            "name": "levies.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jan 22, 2025"
+        },
+        {
+            "name": "lucked.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Dec 13, 2025"
+        },
+        {
+            "name": "maintenances.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 9, 2025"
+        },
+        {
+            "name": "marihuanas.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 18, 2025"
+        },
+        {
+            "name": "masmart.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 15, 2025"
+        },
+        {
+            "name": "mexicocitymarijuana.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 12, 2025"
+        },
+        {
+            "name": "mexicomarihuana.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 12, 2025"
+        },
+        {
+            "name": "miamijaguar.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 11, 2025"
+        },
+        {
+            "name": "noobfree.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 11, 2025"
+        },
+        {
+            "name": "pepes.dev",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Apr 21, 2025"
+        },
+        {
+            "name": "política.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 2, 2025"
+        },
+        {
+            "name": "privacies.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 9, 2025"
+        },
+        {
+            "name": "proleggings.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Jan 29, 2025"
+        },
+        {
+            "name": "recessed.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 23, 2025"
+        },
+        {
+            "name": "ryanmcginley.net",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Mar 12, 2025"
+        },
+        {
+            "name": "servergamer.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 3, 2025"
+        },
+        {
+            "name": "smartsolar.us",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "May 15, 2025"
+        },
+        {
+            "name": "survives.net",
+            "status": "Action Required",
+            "platform": "Squarespace",
+            "expiry": "Feb 25, 2025"
+        },
+        {
+            "name": "tankcontainer.org",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Nov 2, 2025"
+        },
+        {
+            "name": "thclocate.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Dec 27, 2024"
+        },
+        {
+            "name": "welobbyit.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Sep 28, 2025"
+        },
+        {
+            "name": "wickedgay.com",
+            "status": "Active",
+            "platform": "Squarespace",
+            "expiry": "Feb 2, 2025"
+        }
+    ]
+}

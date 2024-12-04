@@ -1,95 +1,192 @@
 const domains = [
+    // Cannabis/CBD Category
+    { name: 'cannafirm.net', category: 'Cannabis', buyNow: 55000, minOffer: 99 },
+    { name: 'cannasnack.com', category: 'Cannabis', buyNow: 55000, minOffer: 9944 },
+    { name: 'cannastocks.com', category: 'Cannabis', buyNow: 150000, minOffer: 9999 },
+    { name: 'cannatubes.com', category: 'Cannabis', buyNow: 12500, minOffer: 99 },
+    { name: 'cbcvoil.com', category: 'Cannabis', buyNow: 50000, minOffer: 99 },
+    { name: 'cbeoil.com', category: 'Cannabis', buyNow: 50000, minOffer: 99 },
+    { name: 'cbgvoil.com', category: 'Cannabis', buyNow: 90000, minOffer: 99 },
+    { name: 'getmarijuana.org', category: 'Cannabis', buyNow: 19000, minOffer: 99 },
+    { name: 'marihuanas.org', category: 'Cannabis', buyNow: 90000, minOffer: 9944 },
+    { name: 'mexicocitymarijuana.com', category: 'Cannabis', buyNow: 9000, minOffer: 99 },
+    { name: 'mexicomarihuana.org', category: 'Cannabis', buyNow: 41200, minOffer: 99 },
+    { name: 'thclocate.com', category: 'Cannabis', buyNow: 55000, minOffer: 12000 },
+
+    // Technology Category
+    { name: 'adjusts.net', category: 'Technology', buyNow: 15000, minOffer: 99 },
+    { name: 'servergamer.com', category: 'Technology', buyNow: 12000, minOffer: 5000 },
+    { name: 'gpt-4.com.mx', category: 'Technology', buyNow: 666, minOffer: 99 },
+    { name: 'je4.net', category: 'Technology', buyNow: 50009, minOffer: 99 },
+    { name: 'noobfree.com', category: 'Technology', buyNow: 1500, minOffer: 99 },
+    { name: 'fragfun.com', category: 'Technology', buyNow: 7500, minOffer: 99 },
     {
-        name: "cannabusiness.com",
-        category: "Cannabis",
-        price: 25000,
-        featured: true,
-        dateAdded: "2023-06-15",
-        description: "Premium domain for cannabis-related businesses and startups",
-        keywords: ["cannabis", "marijuana", "business", "startup"]
-    },
-    {
-        name: "techrevolution.io",
-        category: "Tech",
-        price: 45000,
+        name: '01fast.com',
+        category: 'Technology',
+        buyNow: 2999,
+        minOffer: 999,
         featured: false,
-        dateAdded: "2023-05-22",
-        description: "Cutting-edge domain for technology innovation and disruption",
-        keywords: ["technology", "innovation", "startup", "digital"]
+        expiryDate: '2025-10-13'
     },
     {
-        name: "gamingempire.net",
-        category: "Gaming",
-        price: 15000,
-        featured: true,
-        dateAdded: "2023-07-01",
-        description: "Powerful domain for gaming platforms, esports, and gaming communities",
-        keywords: ["gaming", "esports", "community", "entertainment"]
-    },
-    {
-        name: "realestatepro.com",
-        category: "Real Estate",
-        price: 35000,
+        name: '01fast.net',
+        category: 'Technology',
+        buyNow: 1499,
+        minOffer: 499,
         featured: false,
-        dateAdded: "2023-06-01",
-        description: "Professional domain for real estate agents and property businesses",
-        keywords: ["realestate", "property", "investment", "broker"]
+        expiryDate: '2025-10-13'
     },
     {
-        name: "businessinnovate.com",
-        category: "Business",
-        price: 50000,
-        featured: true,
-        dateAdded: "2023-05-15",
-        description: "Strategic domain for business consulting and innovation",
-        keywords: ["business", "consulting", "strategy", "innovation"]
-    },
-    {
-        name: "aitech.io",
-        category: "Tech",
-        price: 75000,
-        featured: true,
-        dateAdded: "2023-07-10",
-        description: "Cutting-edge AI and machine learning technology domain",
-        keywords: ["ai", "machinelearning", "technology", "innovation"]
-    },
-    {
-        name: "cryptoworld.net",
-        category: "Crypto",
-        price: 60000,
+        name: '01fast.online',
+        category: 'Technology',
+        buyNow: 999,
+        minOffer: 299,
         featured: false,
-        dateAdded: "2023-06-25",
-        description: "Comprehensive domain for cryptocurrency and blockchain platforms",
-        keywords: ["crypto", "blockchain", "finance", "technology"]
+        expiryDate: '2025-10-13'
     },
     {
-        name: "healthtech.com",
-        category: "Health",
-        price: 40000,
+        name: 'cloudstorage.now',
+        category: 'Technology',
+        buyNow: 4999,
+        minOffer: 1999,
         featured: true,
-        dateAdded: "2023-05-30",
-        description: "Innovative domain for healthcare technology and digital health solutions",
-        keywords: ["health", "technology", "medical", "innovation"]
+        expiryDate: '2025-10-20'
     },
+
+    // Business Category
+    { name: 'budgetairlines.org', category: 'Business', buyNow: 6500, minOffer: 99 },
+    { name: 'coauthor.net', category: 'Business', buyNow: 1900, minOffer: 99 },
+    { name: 'fund.com.mx', category: 'Business', buyNow: 34444, minOffer: 99 },
+    { name: 'homeowneradvocategroup.com', category: 'Business', buyNow: 5000, minOffer: 99 },
+    { name: 'smartsolar.us', category: 'Business', buyNow: 90000, minOffer: 994 },
+    { name: 'welobbyit.com', category: 'Business', buyNow: 30000, minOffer: 99 },
+    { name: 'bulkquartz.com', category: 'Business', buyNow: 9555, minOffer: 900 },
+    { name: 'masmart.org', category: 'Business', buyNow: 5000, minOffer: 2900 },
+    { name: 'privacies.net', category: 'Business', buyNow: 15000, minOffer: 99 },
+    { name: 'proleggings.com', category: 'Business', buyNow: 7600, minOffer: 99 },
+    { name: 'tankcontainer.org', category: 'Business', buyNow: 5500, minOffer: 99 },
     {
-        name: "marketingpro.com",
-        category: "Marketing",
-        price: 30000,
+        name: 'awakens.org',
+        category: 'Business',
+        buyNow: 1999,
+        minOffer: 799,
         featured: false,
-        dateAdded: "2023-06-10",
-        description: "Professional marketing and digital strategy domain",
-        keywords: ["marketing", "digital", "strategy", "branding"]
+        expiryDate: '2025-10-13'
     },
     {
-        name: "sustainabletech.io",
-        category: "Tech",
-        price: 55000,
+        name: 'countermen.com',
+        category: 'Business',
+        buyNow: 2499,
+        minOffer: 999,
+        featured: false,
+        expiryDate: '2025-10-13'
+    },
+    {
+        name: 'creditrepair.now',
+        category: 'Business',
+        buyNow: 7999,
+        minOffer: 2999,
         featured: true,
-        dateAdded: "2023-07-05",
-        description: "Domain focused on sustainable technology and green innovation",
-        keywords: ["sustainability", "technology", "green", "innovation"]
-    }
+        expiryDate: '2025-10-20'
+    },
+    {
+        name: 'exterminated.net',
+        category: 'Business',
+        buyNow: 1499,
+        minOffer: 499,
+        featured: false,
+        expiryDate: '2025-10-19'
+    },
+    {
+        name: 'guiltily.com',
+        category: 'Business',
+        buyNow: 1999,
+        minOffer: 799,
+        featured: false,
+        expiryDate: '2025-10-13'
+    },
+    {
+        name: 'interprets.net',
+        category: 'Business',
+        buyNow: 1999,
+        minOffer: 799,
+        featured: false,
+        expiryDate: '2025-10-30'
+    },
+    {
+        name: 'midsts.com',
+        category: 'Business',
+        buyNow: 1499,
+        minOffer: 499,
+        featured: false,
+        expiryDate: '2025-10-19'
+    },
+    {
+        name: 'natured.net',
+        category: 'Business',
+        buyNow: 1999,
+        minOffer: 799,
+        featured: false,
+        expiryDate: '2025-10-30'
+    },
+    {
+        name: 'stayed.net',
+        category: 'Business',
+        buyNow: 1499,
+        minOffer: 499,
+        featured: false,
+        expiryDate: '2025-10-30'
+    },
+    {
+        name: 'stimulations.org',
+        category: 'Business',
+        buyNow: 2499,
+        minOffer: 999,
+        featured: false,
+        expiryDate: '2025-10-19'
+    },
+    {
+        name: 'vocabularies.org',
+        category: 'Business',
+        buyNow: 2999,
+        minOffer: 999,
+        featured: false,
+        expiryDate: '2025-10-13'
+    },
+    {
+        name: 'wintry.net',
+        category: 'Business',
+        buyNow: 1499,
+        minOffer: 499,
+        featured: false,
+        expiryDate: '2025-10-13'
+    },
+
+    // Domains Category
+    { name: 'adoptive.net', category: 'Domains', buyNow: 12000, minOffer: 99 },
+    { name: 'adopts.net', category: 'Domains', buyNow: 75000, minOffer: 99 },
+    { name: 'amain.org', category: 'Domains', buyNow: 6000, minOffer: 99 },
+    { name: 'awaits.net', category: 'Domains', buyNow: 2000, minOffer: 99 },
+    { name: 'awakes.net', category: 'Domains', buyNow: 17000, minOffer: 9900 },
+    { name: 'burglarizes.com', category: 'Domains', buyNow: 7666, minOffer: 99 },
+    { name: 'catsru.com', category: 'Domains', buyNow: 3800, minOffer: 800 },
+    { name: 'dislikes.org', category: 'Domains', buyNow: 5000, minOffer: 99 },
+    { name: 'leapt.org', category: 'Domains', buyNow: 2444, minOffer: 99 },
+    { name: 'levies.net', category: 'Domains', buyNow: 2400, minOffer: 99 },
+    { name: 'lucked.net', category: 'Domains', buyNow: 77777, minOffer: 99 },
+    { name: 'maintenances.org', category: 'Domains', buyNow: 7000, minOffer: 99 },
+    { name: 'survives.net', category: 'Domains', buyNow: 46000, minOffer: 99 },
+
+    // Geographic Category
+    { name: 'cola.mx', category: 'Geographic', buyNow: 150000, minOffer: 9999 },
+    { name: 'politica.net', category: 'Geographic', buyNow: 75000, minOffer: 15000 },
+    { name: 'xn--poltica-9ya.net', category: 'Geographic', buyNow: 65000, minOffer: 99 },
+
+    // Personal Category
+    { name: 'ryanmcginley.net', category: 'Personal', buyNow: null, minOffer: 99 },
+    
+    // Adult Category
+    { name: 'wickedgay.com', category: 'Adult', buyNow: 7500, minOffer: 2900 }
 ];
 
-// Export for use in other files
-window.DOMAIN_DATA = domains;
+export default domains;
