@@ -1,192 +1,66 @@
 const domains = [
-    // Cannabis/CBD Category
-    { name: 'cannafirm.net', category: 'Cannabis', buyNow: 55000, minOffer: 99 },
-    { name: 'cannasnack.com', category: 'Cannabis', buyNow: 55000, minOffer: 9944 },
-    { name: 'cannastocks.com', category: 'Cannabis', buyNow: 150000, minOffer: 9999 },
-    { name: 'cannatubes.com', category: 'Cannabis', buyNow: 12500, minOffer: 99 },
-    { name: 'cbcvoil.com', category: 'Cannabis', buyNow: 50000, minOffer: 99 },
-    { name: 'cbeoil.com', category: 'Cannabis', buyNow: 50000, minOffer: 99 },
-    { name: 'cbgvoil.com', category: 'Cannabis', buyNow: 90000, minOffer: 99 },
-    { name: 'getmarijuana.org', category: 'Cannabis', buyNow: 19000, minOffer: 99 },
-    { name: 'marihuanas.org', category: 'Cannabis', buyNow: 90000, minOffer: 9944 },
-    { name: 'mexicocitymarijuana.com', category: 'Cannabis', buyNow: 9000, minOffer: 99 },
-    { name: 'mexicomarihuana.org', category: 'Cannabis', buyNow: 41200, minOffer: 99 },
-    { name: 'thclocate.com', category: 'Cannabis', buyNow: 55000, minOffer: 12000 },
-
-    // Technology Category
-    { name: 'adjusts.net', category: 'Technology', buyNow: 15000, minOffer: 99 },
-    { name: 'servergamer.com', category: 'Technology', buyNow: 12000, minOffer: 5000 },
-    { name: 'gpt-4.com.mx', category: 'Technology', buyNow: 666, minOffer: 99 },
-    { name: 'je4.net', category: 'Technology', buyNow: 50009, minOffer: 99 },
-    { name: 'noobfree.com', category: 'Technology', buyNow: 1500, minOffer: 99 },
-    { name: 'fragfun.com', category: 'Technology', buyNow: 7500, minOffer: 99 },
-    {
-        name: '01fast.com',
-        category: 'Technology',
-        buyNow: 2999,
-        minOffer: 999,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-    {
-        name: '01fast.net',
-        category: 'Technology',
-        buyNow: 1499,
-        minOffer: 499,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-    {
-        name: '01fast.online',
-        category: 'Technology',
-        buyNow: 999,
-        minOffer: 299,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-    {
-        name: 'cloudstorage.now',
-        category: 'Technology',
-        buyNow: 4999,
-        minOffer: 1999,
-        featured: true,
-        expiryDate: '2025-10-20'
-    },
-
-    // Business Category
-    { name: 'budgetairlines.org', category: 'Business', buyNow: 6500, minOffer: 99 },
-    { name: 'coauthor.net', category: 'Business', buyNow: 1900, minOffer: 99 },
-    { name: 'fund.com.mx', category: 'Business', buyNow: 34444, minOffer: 99 },
-    { name: 'homeowneradvocategroup.com', category: 'Business', buyNow: 5000, minOffer: 99 },
-    { name: 'smartsolar.us', category: 'Business', buyNow: 90000, minOffer: 994 },
-    { name: 'welobbyit.com', category: 'Business', buyNow: 30000, minOffer: 99 },
-    { name: 'bulkquartz.com', category: 'Business', buyNow: 9555, minOffer: 900 },
-    { name: 'masmart.org', category: 'Business', buyNow: 5000, minOffer: 2900 },
-    { name: 'privacies.net', category: 'Business', buyNow: 15000, minOffer: 99 },
-    { name: 'proleggings.com', category: 'Business', buyNow: 7600, minOffer: 99 },
-    { name: 'tankcontainer.org', category: 'Business', buyNow: 5500, minOffer: 99 },
-    {
-        name: 'awakens.org',
-        category: 'Business',
-        buyNow: 1999,
-        minOffer: 799,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-    {
-        name: 'countermen.com',
-        category: 'Business',
-        buyNow: 2499,
-        minOffer: 999,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-    {
-        name: 'creditrepair.now',
-        category: 'Business',
-        buyNow: 7999,
-        minOffer: 2999,
-        featured: true,
-        expiryDate: '2025-10-20'
-    },
-    {
-        name: 'exterminated.net',
-        category: 'Business',
-        buyNow: 1499,
-        minOffer: 499,
-        featured: false,
-        expiryDate: '2025-10-19'
-    },
-    {
-        name: 'guiltily.com',
-        category: 'Business',
-        buyNow: 1999,
-        minOffer: 799,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-    {
-        name: 'interprets.net',
-        category: 'Business',
-        buyNow: 1999,
-        minOffer: 799,
-        featured: false,
-        expiryDate: '2025-10-30'
-    },
-    {
-        name: 'midsts.com',
-        category: 'Business',
-        buyNow: 1499,
-        minOffer: 499,
-        featured: false,
-        expiryDate: '2025-10-19'
-    },
-    {
-        name: 'natured.net',
-        category: 'Business',
-        buyNow: 1999,
-        minOffer: 799,
-        featured: false,
-        expiryDate: '2025-10-30'
-    },
-    {
-        name: 'stayed.net',
-        category: 'Business',
-        buyNow: 1499,
-        minOffer: 499,
-        featured: false,
-        expiryDate: '2025-10-30'
-    },
-    {
-        name: 'stimulations.org',
-        category: 'Business',
-        buyNow: 2499,
-        minOffer: 999,
-        featured: false,
-        expiryDate: '2025-10-19'
-    },
-    {
-        name: 'vocabularies.org',
-        category: 'Business',
-        buyNow: 2999,
-        minOffer: 999,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-    {
-        name: 'wintry.net',
-        category: 'Business',
-        buyNow: 1499,
-        minOffer: 499,
-        featured: false,
-        expiryDate: '2025-10-13'
-    },
-
-    // Domains Category
-    { name: 'adoptive.net', category: 'Domains', buyNow: 12000, minOffer: 99 },
-    { name: 'adopts.net', category: 'Domains', buyNow: 75000, minOffer: 99 },
-    { name: 'amain.org', category: 'Domains', buyNow: 6000, minOffer: 99 },
-    { name: 'awaits.net', category: 'Domains', buyNow: 2000, minOffer: 99 },
-    { name: 'awakes.net', category: 'Domains', buyNow: 17000, minOffer: 9900 },
-    { name: 'burglarizes.com', category: 'Domains', buyNow: 7666, minOffer: 99 },
-    { name: 'catsru.com', category: 'Domains', buyNow: 3800, minOffer: 800 },
-    { name: 'dislikes.org', category: 'Domains', buyNow: 5000, minOffer: 99 },
-    { name: 'leapt.org', category: 'Domains', buyNow: 2444, minOffer: 99 },
-    { name: 'levies.net', category: 'Domains', buyNow: 2400, minOffer: 99 },
-    { name: 'lucked.net', category: 'Domains', buyNow: 77777, minOffer: 99 },
-    { name: 'maintenances.org', category: 'Domains', buyNow: 7000, minOffer: 99 },
-    { name: 'survives.net', category: 'Domains', buyNow: 46000, minOffer: 99 },
-
-    // Geographic Category
-    { name: 'cola.mx', category: 'Geographic', buyNow: 150000, minOffer: 9999 },
-    { name: 'politica.net', category: 'Geographic', buyNow: 75000, minOffer: 15000 },
-    { name: 'xn--poltica-9ya.net', category: 'Geographic', buyNow: 65000, minOffer: 99 },
-
-    // Personal Category
-    { name: 'ryanmcginley.net', category: 'Personal', buyNow: null, minOffer: 99 },
-    
-    // Adult Category
-    { name: 'wickedgay.com', category: 'Adult', buyNow: 7500, minOffer: 2900 }
+    { name: '01fast.com', category: 'Technology & SaaS', buyNow: 8628, expiryDate: '2025-10-13' },
+    { name: 'adjusts.net', category: 'Technology & SaaS', buyNow: 15000 },
+    { name: 'adoptive.net', category: 'Enterprise & B2B', buyNow: 12000 },
+    { name: 'adopts.net', category: 'Enterprise & B2B', buyNow: 75000 },
+    { name: 'amain.org', category: 'Enterprise & B2B', buyNow: 6000 },
+    { name: 'awaits.net', category: 'Enterprise & B2B', buyNow: 2000 },
+    { name: 'awakens.org', category: 'Enterprise & B2B', buyNow: 7500, expiryDate: '2025-10-13', domainPrivacy: true },
+    { name: 'awakes.net', category: 'Enterprise & B2B', buyNow: 17000 },
+    { name: 'budgetairlines.org', category: 'Travel & Tourism', buyNow: 6500 },
+    { name: 'bulkquartz.com', category: 'E-commerce & Retail', buyNow: 9555 },
+    { name: 'burglarizes.com', category: 'Security & Protection', buyNow: 7666 },
+    { name: 'cannafirm.net', category: 'Cannabis & CBD', buyNow: 55000 },
+    { name: 'cannasnack.com', category: 'Cannabis & CBD', buyNow: 55000 },
+    { name: 'cannastocks.com', category: 'Cannabis & Finance', buyNow: 150000 },
+    { name: 'cannatubes.com', category: 'Cannabis & CBD', buyNow: 12500 },
+    { name: 'catsru.com', category: 'Pets & Animals', buyNow: 3800 },
+    { name: 'cbcvoil.com', category: 'Cannabis & CBD', buyNow: 50000 },
+    { name: 'cbeoil.com', category: 'Cannabis & CBD', buyNow: 50000 },
+    { name: 'cbgvoil.com', category: 'Cannabis & CBD', buyNow: 90000 },
+    { name: 'cloudstorage.now', category: 'Cloud & Storage', buyNow: 4999, expiryDate: '2025-10-20', domainPrivacy: true },
+    { name: 'coauthor.net', category: 'Writing & Publishing', buyNow: 1900 },
+    { name: 'cola.mx', category: 'Food & Beverage', buyNow: 150000 },
+    { name: 'countermen.com', category: 'E-commerce & Retail', buyNow: 25000, expiryDate: '2025-10-13', domainPrivacy: true },
+    { name: 'creditrepair.now', category: 'Finance & Credit', buyNow: 7999, expiryDate: '2025-10-20', domainPrivacy: true },
+    { name: 'dislikes.org', category: 'Social Media', buyNow: 5000 },
+    { name: 'exterminated.net', category: 'Home Services', buyNow: 1499, expiryDate: '2025-10-19', domainPrivacy: true },
+    { name: 'fragfun.com', category: 'Gaming & Esports', buyNow: 7500 },
+    { name: 'fund.com.mx', category: 'Finance & Investment', buyNow: 34444 },
+    { name: 'getmarijuana.org', category: 'Cannabis & CBD', buyNow: 19000 },
+    { name: 'gpt-4.com.mx', category: 'AI & Machine Learning', buyNow: 666 },
+    { name: 'guiltily.com', category: 'Entertainment', buyNow: 8890, expiryDate: '2025-10-13', domainPrivacy: true },
+    { name: 'homeowneradvocategroup.com', category: 'Real Estate', buyNow: 5000 },
+    { name: 'interprets.net', category: 'Language & Translation', buyNow: 1999, expiryDate: '2025-10-30', domainPrivacy: true },
+    { name: 'je4.net', category: 'Technology & SaaS', buyNow: 50009 },
+    { name: 'leapt.org', category: 'Enterprise & B2B', buyNow: 2444 },
+    { name: 'levies.net', category: 'Finance & Tax', buyNow: 2400 },
+    { name: 'lucked.net', category: 'Gaming & Casino', buyNow: 77777 },
+    { name: 'maintenances.org', category: 'Home Services', buyNow: 7000 },
+    { name: 'marihuanas.org', category: 'Cannabis & CBD', buyNow: 90000 },
+    { name: 'masmart.org', category: 'E-commerce & Retail', buyNow: 5000 },
+    { name: 'mexicocitymarijuana.com', category: 'Cannabis & CBD', buyNow: 9000 },
+    { name: 'mexicomarihuana.org', category: 'Cannabis & CBD', buyNow: 41200 },
+    { name: 'midsts.com', category: 'Enterprise & B2B', buyNow: 67000, expiryDate: '2025-10-19', domainPrivacy: true },
+    { name: 'natured.net', category: 'Environment & Nature', buyNow: 1999, expiryDate: '2025-10-30', domainPrivacy: true },
+    { name: 'noobfree.com', category: 'Gaming & Esports', buyNow: 1500 },
+    { name: 'politica.net', category: 'Politics & Government', buyNow: 75000 },
+    { name: 'privacies.net', category: 'Security & Privacy', buyNow: 15000 },
+    { name: 'proleggings.com', category: 'Fashion & Apparel', buyNow: 7600 },
+    { name: 'ryanmcginley.net', category: 'Personal Brands', buyNow: null },
+    { name: 'servergamer.com', category: 'Gaming & Hosting', buyNow: 12000 },
+    { name: 'smartsolar.us', category: 'Energy & Sustainability', buyNow: 90000 },
+    { name: 'stayed.net', category: 'Travel & Hospitality', buyNow: 1499, expiryDate: '2025-10-30', domainPrivacy: true },
+    { name: 'stimulations.org', category: 'Health & Wellness', buyNow: 2499, expiryDate: '2025-10-19', domainPrivacy: true },
+    { name: 'survives.net', category: 'Health & Safety', buyNow: 46000 },
+    { name: 'tankcontainer.org', category: 'Industrial & Logistics', buyNow: 5500 },
+    { name: 'thclocate.com', category: 'Cannabis & CBD', buyNow: 55000 },
+    { name: 'vocabularies.org', category: 'Education & Learning', buyNow: 8900, expiryDate: '2025-10-13', domainPrivacy: true },
+    { name: 'welobbyit.com', category: 'Government Relations', buyNow: 30000 },
+    { name: 'wickedgay.com', category: 'Adult & Dating', buyNow: 7500 },
+    { name: 'wined.net', category: 'Food & Beverage', buyNow: 15000 },
+    { name: 'wintry.net', category: 'Weather & Climate', buyNow: 18000, expiryDate: '2025-10-13', domainPrivacy: true },
+    { name: 'xn--poltica-9ya.net', category: 'Politics & Government', buyNow: 65000 }
 ];
 
 export default domains;
